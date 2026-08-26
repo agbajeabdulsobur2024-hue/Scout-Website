@@ -51,7 +51,8 @@ p{max-width:65ch;}
 .eyebrow::before{content:''; width:22px; height:1px; background:var(--green);}
 
 /* ================= HEADER ================= */
-header{position:sticky; top:0; z-index:100; background:rgba(8,9,12,0.82); backdrop-filter:blur(16px); border-bottom:1px solid var(--line);}
+header{position:sticky; top:0; z-index:100; border-bottom:1px solid var(--line);}
+header::before{content:''; position:absolute; inset:0; background:rgba(8,9,12,0.82); backdrop-filter:blur(16px); z-index:-1;}
 nav{display:flex; align-items:center; justify-content:space-between; padding:20px 0;}
 .logo{display:flex; align-items:center; gap:10px; font-family:var(--display); font-weight:700; font-size:17px; letter-spacing:0.03em;}
 .logo-mark{width:24px; height:24px; border-radius:6px; background:linear-gradient(150deg,var(--green),var(--indigo)); display:flex; align-items:center; justify-content:center; font-family:var(--mono); font-size:11px; color:var(--black); font-weight:700;}
