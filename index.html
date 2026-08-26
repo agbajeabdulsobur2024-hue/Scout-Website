@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How It Works — Scout</title>
+<meta name="description" content="The Scout mental model: Ask, Record, Monitor, Detect change, Alert, Retrieve, Continue — with real examples.">
+<link rel="canonical" href="https://scoutapp.com/how-it-works/">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<header>
+  <nav class="wrap">
+    <a href="/" class="logo">
+      <span class="logo-mark">S</span>
+      <span>SCOUT</span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="/product/">Product</a>
+      <a href="/how-it-works/" class="active">How it works</a>
+      <a href="/capabilities/">Capabilities</a>
+      <a href="/pricing/">Pricing</a>
+      <a href="/resources/">Resources</a>
+      <a href="https://t.me/scou0_bot" class="nav-cta" target="_blank" rel="noopener">Enter Scout <span class="arrow">→</span></a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="eyebrow">How it works</div>
+    <h1>Ask → Record → Monitor →<br>Detect change → Alert →<br>Retrieve → Continue</h1>
+    <p class="lede">This model sits underneath every command Scout supports. Once it clicks, the rest of the product makes sense.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="timeline">
+      <div class="tl-step">
+        <div class="tl-dot">01</div>
+        <h3>Tell Scout what matters</h3>
+        <p>You give Scout a market, condition, level, zone, setup, or preference — in plain language or a command.</p>
+        <div class="flow-example"><strong>You say —</strong> "watch for a breakout entry on ETH above the range high, stop below 2400"</div>
+      </div>
+      <div class="tl-step">
+        <div class="tl-dot">02</div>
+        <h3>Scout builds the context</h3>
+        <p>Scout structures the request around the relevant market information — turning it into a trade-plan monitor, not a vague note.</p>
+        <div class="flow-example"><strong>Scout does —</strong> parses entry, stop, and structure condition into a tracked trade-plan monitor</div>
+      </div>
+      <div class="tl-step">
+        <div class="tl-dot">03</div>
+        <h3>Scout keeps watching</h3>
+        <p>The condition remains monitored instead of disappearing after one interaction. You don't need to ask again.</p>
+        <div class="flow-example"><strong>State —</strong> ETH breakout monitor, active and unattended</div>
+      </div>
+      <div class="tl-step">
+        <div class="tl-dot">04</div>
+        <h3>Something changes</h3>
+        <p>The monitored market condition changes — price breaks the range, a zone gets tested, structure shifts.</p>
+        <div class="flow-example"><strong>Event —</strong> ETH breaks above range high, displacement confirmed</div>
+      </div>
+      <div class="tl-step">
+        <div class="tl-dot" style="border-color:var(--green); color:var(--green);">05</div>
+        <h3>Scout tells you what matters, and why</h3>
+        <p>Scout surfaces the relevant event and explains the context behind it — not just that price moved.</p>
+        <div class="flow-example"><strong>Scout says —</strong> "ETH broke above your range high with confirmed displacement. Stop remains below 2400."</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">After the alert</div>
+      <h2>Retrieve and continue</h2>
+      <p>The loop doesn't end at the alert. You can ask what happened, why, or resume something you paused — days or weeks later, stored in a durable database that survives restarts and new sessions.</p>
+    </div>
+    <table>
+      <tr><th>You ask</th><th>Scout does</th></tr>
+      <tr><td>"What was I watching?"</td><td>Retrieves your active watches</td></tr>
+      <tr><td>"What conditions did I ask you to monitor?"</td><td>Retrieves the relevant conditions</td></tr>
+      <tr><td>"Why did you alert me?"</td><td>Retrieves the recorded event and market context</td></tr>
+      <tr><td>"Resume this setup"</td><td>Continues the monitoring workflow — no re-describing it</td></tr>
+    </table>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="callout">
+      <p>See every way to describe a condition to Scout.</p>
+      <a href="/resources/guides/">Explore the full How-To Guides →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="/" class="logo"><span class="logo-mark">S</span><span>SCOUT</span></a>
+        <p>Know what matters. Before it moves.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <a href="/product/">Product</a>
+          <a href="/how-it-works/">How it works</a>
+          <a href="/capabilities/">Capabilities</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/resources/">Resources</a>
+        </div>
+        <div class="footer-col">
+          <a href="/resources/guides/">How-To Guides</a>
+          <a href="/resources/commands/">Commands</a>
+          <a href="/resources/changelog/">Changelog</a>
+          <a href="https://www.notion.so/Scout-Docs-3c5fac3d5871816e9b00f154d3b86df0" target="_blank" rel="noopener">Full documentation</a>
+        </div>
+        <div class="footer-col">
+          <a href="/terms/">Terms of Service</a>
+          <a href="/privacy/">Privacy Notice</a>
+          <a href="/payment-policy/">Payment &amp; Refund Policy</a>
+          <a href="/risk-disclaimer/">Risk Disclaimer</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Scout.</span>
+      <div class="footer-social">
+        <a href="https://x.com/ScoutMarkets" target="_blank" rel="noopener">X</a>
+        <a href="https://t.me/scou0_bot" target="_blank" rel="noopener">Telegram</a>
+      </div>
+    </div>
+    <p class="footer-note">Scout is a market-information and trading decision-support tool. It does not provide investment, financial, tax, or legal advice, and does not guarantee results. See the <a href="/risk-disclaimer/" style="color:var(--muted); text-decoration:underline;">Trading &amp; Risk Disclaimer</a> before using Scout.</p>
+  </div>
+</footer>
+<script src="/assets/nav.js"></script>
+</body>
+</html>
