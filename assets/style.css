@@ -207,9 +207,13 @@ td{color:var(--muted);}
 td:first-child, td code{color:var(--text);}
 code{font-family:var(--mono); font-size:12.5px; background:var(--elevated); padding:2px 8px; border-radius:5px; color:var(--green);}
 
-.faq-item{border-top:1px solid var(--line); padding:26px 0;}
+.faq-item{border-top:1px solid var(--line); padding:22px 0;}
 .faq-item:last-child{border-bottom:1px solid var(--line);}
-.faq-item h3{font-size:16.5px; margin-bottom:9px; font-family:var(--body); font-weight:700;}
+.faq-item summary{font-size:16.5px; font-family:var(--body); font-weight:700; color:var(--text); cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center; gap:16px;}
+.faq-item summary::-webkit-details-marker{display:none;}
+.faq-item summary::after{content:'+'; font-family:var(--mono); font-weight:400; font-size:20px; color:var(--dim); flex-shrink:0; transition:transform 0.25s var(--ease); line-height:1;}
+.faq-item[open] summary::after{transform:rotate(45deg); color:var(--green);}
+.faq-item[open] summary{margin-bottom:12px;}
 .faq-item p{color:var(--muted); font-size:14.5px; line-height:1.68;}
 
 /* ================= RESOURCES — mosaic, not uniform grid ================= */
