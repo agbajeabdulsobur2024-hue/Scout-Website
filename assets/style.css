@@ -251,6 +251,11 @@ code{font-family:var(--mono); font-size:12.5px; background:var(--elevated); padd
 .callout p{color:var(--muted); font-size:14.5px;}
 .callout a{color:var(--green); font-weight:700; font-size:14.5px; display:inline-flex; align-items:center; gap:6px; white-space:nowrap;}
 
+.quote-block{max-width:760px; margin:0 auto; text-align:center; padding:8px 0;}
+.quote-mark{font-family:var(--display); font-size:56px; color:var(--green); line-height:1; margin-bottom:8px; opacity:0.7;}
+.quote-text{font-family:var(--display); font-size:clamp(19px,2.6vw,25px); font-weight:500; color:var(--text); line-height:1.55; letter-spacing:var(--t-tight); max-width:none;}
+.quote-attr{font-family:var(--mono); font-size:13px; color:var(--dim); letter-spacing:var(--t-word); margin-top:24px; text-transform:uppercase;}
+
 .cta-band{background:linear-gradient(155deg, var(--elevated-2) 0%, var(--surface) 100%); border:1px solid var(--line); border-radius:var(--r-2xl); padding:64px; text-align:center; position:relative; overflow:hidden;}
 .cta-band::before{content:''; position:absolute; bottom:-120px; left:50%; transform:translateX(-50%); width:500px; height:300px; background:radial-gradient(ellipse, rgba(0,217,166,0.14), transparent 70%); pointer-events:none;}
 .cta-band h2{font-size:clamp(24px,3.2vw,34px); margin-bottom:16px; position:relative;}
