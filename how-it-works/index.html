@@ -21,6 +21,7 @@
       <a href="/product/">Product</a>
       <a href="/how-it-works/" class="active">How it works</a>
       <a href="/capabilities/">Capabilities</a>
+      <a href="/social/">Social</a>
       <a href="/pricing/">Pricing</a>
       <a href="/resources/">Resources</a>
       <a href="https://t.me/scou0_bot" class="nav-cta" target="_blank" rel="noopener">Enter Scout <span class="arrow">→</span></a>
@@ -91,6 +92,60 @@
   </div>
 </section>
 
+<section style="padding-top:0; position:relative;">
+  <div class="bg-numeral" style="top:0; left:-6%;">04</div>
+  <div class="wrap" style="position:relative; z-index:1;">
+    <div class="section-head">
+      <div class="eyebrow">Trade lifecycle</div>
+      <h2>IGNORE → WAIT → WATCH → TRADE</h2>
+      <p>This is Scout's decision loop — but it isn't a one-way funnel. The market can move between these states in either direction, and Scout tells you which state you're in and why.</p>
+    </div>
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-icon" style="color:var(--danger);">IGNORE</div>
+        <h3>Not currently relevant</h3>
+        <p>The market or setup doesn't meet the conditions that make it worth acting on right now. No action required.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon" style="color:var(--warn);">WAIT</div>
+        <h3>Interesting, not actionable yet</h3>
+        <p>Something's potentially relevant, but confirmation is missing. Scout explains exactly what's missing — e.g. "structure is interesting, but confirmation is missing."</p>
+      </div>
+      <div class="card">
+        <div class="card-icon" style="color:var(--indigo);">WATCH</div>
+        <h3>A condition you asked Scout to track</h3>
+        <p>You've identified something specific — "watch BTC for a break above 105,000" — and Scout monitors it persistently.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon" style="color:var(--green);">TRADE</div>
+        <h3>Setup requirements are met</h3>
+        <p>The current market state satisfies the relevant setup logic and is actionable. This does not mean guaranteed profit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">The loop isn't linear</div>
+      <h2>States move in both directions</h2>
+      <p>The exact transitions follow what Scout actually observes in the market — not a fixed script. A few examples:</p>
+    </div>
+    <table>
+      <tr><th>Transition</th><th>What it means</th></tr>
+      <tr><td class="mono">IGNORE → WAIT</td><td>A previously irrelevant market becomes interesting</td></tr>
+      <tr><td class="mono">WAIT → TRADE</td><td>The missing confirmation occurs</td></tr>
+      <tr><td class="mono">WAIT → WATCH</td><td>You ask Scout to monitor the missing condition</td></tr>
+      <tr><td class="mono">WATCH → TRADE</td><td>The monitored condition triggers and becomes actionable</td></tr>
+      <tr><td class="mono">WATCH → WAIT</td><td>The condition changes or readiness is lost</td></tr>
+      <tr><td class="mono">TRADE → WAIT</td><td>The setup is no longer entry-ready</td></tr>
+      <tr><td class="mono">TRADE → IGNORE</td><td>The underlying thesis becomes invalid</td></tr>
+      <tr><td class="mono">WATCH → IGNORE</td><td>The monitored thesis becomes invalid or irrelevant</td></tr>
+    </table>
+  </div>
+</section>
+
 <section style="padding-top:0;">
   <div class="wrap">
     <div class="callout">
@@ -112,6 +167,7 @@
           <a href="/product/">Product</a>
           <a href="/how-it-works/">How it works</a>
           <a href="/capabilities/">Capabilities</a>
+          <a href="/social/">Scout Social</a>
           <a href="/pricing/">Pricing</a>
           <a href="/resources/">Resources</a>
         </div>
