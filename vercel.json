@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/insights/:id",
+      "destination": "http://77.42.127.25:8080/insights/:id"
+    }
+  ]
+}
