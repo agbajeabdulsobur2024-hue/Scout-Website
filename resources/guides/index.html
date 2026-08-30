@@ -21,6 +21,7 @@
       <a href="/product/">Product</a>
       <a href="/how-it-works/">How it works</a>
       <a href="/capabilities/">Capabilities</a>
+      <a href="/social/">Social</a>
       <a href="/pricing/">Pricing</a>
       <a href="/resources/" class="active">Resources</a>
       <a href="https://t.me/scou0_bot" class="nav-cta" target="_blank" rel="noopener">Enter Scout <span class="arrow">→</span></a>
@@ -66,7 +67,11 @@
 <div class="guide"><div><div class="guide-say">"/playbook BTC"</div></div><div class="guide-get">Tracks SMC playbook progress for a symbol (command-only by design).</div></div></div>
     <div class="guide-group"><h2>Trading</h2><div class="guide"><div><div class="guide-say">"why WAIT on ETH?"</div></div><div class="guide-get">Explain Yourself Mode — shows exactly which conditions are met and unmet.</div></div>
 <div class="guide"><div><div class="guide-say">"what's missing for this setup?"</div></div><div class="guide-get">Names the specific missing condition.</div></div>
+<div class="guide"><div><div class="guide-say">"what's the setup on BTC?"</div></div><div class="guide-get">Reflects current price, current 15M structure, and 1H/4H context — not a repeated old thesis. If it's no longer entry-ready, Scout says so.</div></div>
 <div class="guide"><div><div class="guide-say">"show me the risk/reward on this"</div></div><div class="guide-get">Entry, stop, and targets together — always distinguishes a confirmed structure target from a projected one.</div></div></div>
+    <div class="guide-group"><h2>Trend</h2><div class="guide"><div><div class="guide-say">"what changed on BTC?"</div></div><div class="guide-get">A 15M trend change is reported on its own — e.g. "15M Trend Changed Bearish" — without implying the 4H bias has reversed too.</div></div>
+<div class="guide"><div><div class="guide-say">(when it happens)</div></div><div class="guide-get">If the higher timeframe itself later changes, Scout reports that separately: "4H Trend Changed Bearish."</div></div>
+<div class="guide"><div><div class="guide-say">"15M setup conflicts with 4H bias"</div></div><div class="guide-get">Scout doesn't hide a valid 15M setup just because HTF hasn't flipped — it shows the 15M setup, the HTF bias, the conflict, and relevant HTF structure together.</div></div></div>
     <div class="guide-group"><h2>Context</h2><div class="guide"><div><div class="guide-say">"why did you alert me on this?"</div></div><div class="guide-get">Traces the alert back to the exact condition and market context that triggered it.</div></div>
 <div class="guide"><div><div class="guide-say">"/journal BTC entered on FVG retest"</div></div><div class="guide-get">Logs a journal entry. Review with <code>/journals</code>, stats with <code>/stats</code>, accuracy with <code>/accuracy</code>.</div></div></div>
     <div class="guide-group"><h2>Personalization</h2><div class="guide"><div><div class="guide-say">"/addwatch SOL, /removewatch SOL"</div></div><div class="guide-get">Adds or removes a symbol from your personal watchlist.</div></div>
@@ -75,6 +80,14 @@
 <div class="guide"><div><div class="guide-say">"/mode"</div></div><div class="guide-get">Switches explanation depth between beginner and pro.</div></div>
 <div class="guide"><div><div class="guide-say">"/accountsize, /risk, /size"</div></div><div class="guide-get">Sets position sizing based on your account and risk tolerance.</div></div>
 <div class="guide"><div><div class="guide-say">"/preferences"</div></div><div class="guide-get">Sets communication style: concise, analytical, educational, professional, or balanced.</div></div></div>
+    <div class="guide-group"><h2>Scout Social</h2><div class="guide"><div><div class="guide-say">"/insight" then "/share"</div></div><div class="guide-get">Turns an active condition into a private Insight, then publishes it — its public link starts resolving. "/unshare" makes it private again.</div></div>
+<div class="guide"><div><div class="guide-say">"/myinsights"</div></div><div class="guide-get">Lists everything you've created, private and public.</div></div>
+<div class="guide"><div><div class="guide-say">"/setbio", "/profile"</div></div><div class="guide-get">Sets your bio and shows your own public profile. "/profile @handle" views someone else's.</div></div>
+<div class="guide"><div><div class="guide-say">"/follow @handle", "/followmarket BTC"</div></div><div class="guide-get">Follows a person's or a symbol's public activity. "/following" lists everything you follow.</div></div>
+<div class="guide"><div><div class="guide-say">"/feed", "/marketfeed BTC"</div></div><div class="guide-get">Your personalized feed from your follows, or one symbol's public activity on its own.</div></div>
+<div class="guide"><div><div class="guide-say">"/discover", "/trending"</div></div><div class="guide-get">Surfaces users worth following, or symbols currently seeing the most public Insight activity.</div></div>
+<div class="guide"><div><div class="guide-say">"/market BTC"</div></div><div class="guide-get">What the Scout network is watching on BTC — watcher counts, condition-type breakdown, most-watched zones, recently triggered Insights, aggregated only from what's public.</div></div>
+<div class="guide"><div><div class="guide-say">"/outcome 3 win"</div></div><div class="guide-get">Records a real outcome on journal entry #3. If it came from a shared Insight, this also feeds the self-reported win-rate stat on your own /profile — never a leaderboard, never audited by Scout.</div></div></div>
     <div class="callout">
       <p>Need deeper technical detail behind any of these?</p>
       <a href="https://www.notion.so/Scout-Docs-3c5fac3d5871816e9b00f154d3b86df0" target="_blank" rel="noopener">Read the complete documentation →</a>
@@ -94,6 +107,7 @@
           <a href="/product/">Product</a>
           <a href="/how-it-works/">How it works</a>
           <a href="/capabilities/">Capabilities</a>
+          <a href="/social/">Scout Social</a>
           <a href="/pricing/">Pricing</a>
           <a href="/resources/">Resources</a>
         </div>
