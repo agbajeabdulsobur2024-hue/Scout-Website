@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Scout — Know what matters, before it moves.</title>
-<meta name="description" content="Scout is a persistent market-monitoring environment for crypto traders. It watches, finds, and explains — the trader decides.">
-<link rel="canonical" href="https://scoutapp.com/">
+<title>Scout Social — Scout</title>
+<meta name="description" content="Scout Social turns real Scout market intelligence into shareable, discoverable Insights. Private by default, shared by your choice.">
+<link rel="canonical" href="https://scoutapp.com/social/">
 <link rel="stylesheet" href="/assets/style.css">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon-180.png">
@@ -21,7 +21,7 @@
       <a href="/product/">Product</a>
       <a href="/how-it-works/">How it works</a>
       <a href="/capabilities/">Capabilities</a>
-      <a href="/social/">Social</a>
+      <a href="/social/" class="active">Social</a>
       <a href="/pricing/">Pricing</a>
       <a href="/resources/">Resources</a>
       <a href="https://t.me/scou0_bot" class="nav-cta" target="_blank" rel="noopener">Enter Scout <span class="arrow">→</span></a>
@@ -30,56 +30,126 @@
   </nav>
 </header>
 
-<section class="page-hero hero-mesh" style="padding-top:96px;">
-  <div class="wrap hero-grid">
-    <div>
-      <div class="eyebrow">Persistent Market Intelligence</div>
-      <h1>Know what<br>matters.<br><span style="color:var(--green);">Before it moves.</span></h1>
-      <p class="lede">Scout is a persistent market-monitoring environment for crypto traders. Tell it what matters, and it watches continuously — explaining why something changed, not just that it did.</p>
-      <div style="display:flex; gap:14px; flex-wrap:wrap; margin-top:34px;">
-        <a href="https://t.me/scou0_bot" class="btn btn-primary" target="_blank" rel="noopener">Enter Scout →</a>
-        <a href="/how-it-works/" class="btn btn-ghost">See how it works</a>
+<section class="page-hero" style="position:relative;">
+  <div class="bg-numeral" style="top:10px; right:-3%;">S</div>
+  <div class="wrap" style="position:relative; z-index:1;">
+    <div class="eyebrow">Scout Social</div>
+    <h1>Private intelligence<br>when you need it.<br><span style="color:var(--green);">Shared when you choose.</span></h1>
+    <p class="lede">Scout Social turns real Scout market intelligence into shareable, discoverable market insights. It isn't a generic feed — every Insight is backed by structured Scout intelligence, not a free-text post.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div style="display:grid; grid-template-columns:0.9fr 1.1fr; gap:56px; align-items:start;">
+      <div class="section-head" style="margin-bottom:0; position:sticky; top:120px;">
+        <div class="eyebrow">The core object</div>
+        <h2>An Insight, not a post</h2>
+        <p>An Insight can originate from Scout activity — market analysis, a monitored condition, a zone, a setup, a market change, an alert, or a triggered monitoring event. What makes it an Insight rather than a caption is that it's backed by the same structured intelligence Scout uses privately.</p>
       </div>
-    </div>
-    <div class="hero-readout-wrap">
       <div class="readout">
-        <div class="readout-bar"><span class="readout-dot" style="background:var(--green);"></span><span>Market Intelligence — example</span></div>
+        <div class="readout-bar"><span class="readout-dot" style="background:var(--indigo);"></span><span>Scout Insight — example</span></div>
         <div class="readout-body">
-          <div class="readout-symbol">$ETH</div>
-          <div class="readout-row"><span class="readout-label">Structure</span><span class="readout-value">Bullish BOS confirmed<br>4H trend intact</span></div>
-          <div class="readout-row"><span class="readout-label">Liquidity</span><span class="readout-value">Resting buy-side above 3,420<br>Sell-side swept at 3,180</span></div>
-          <div class="readout-row"><span class="readout-label">Zones</span><span class="readout-value"><span class="lifecycle"><span class="lifecycle-stage active">TESTED</span></span> Demand 3,190–3,210</span></div>
-          <div class="readout-row"><span class="readout-label">Verdict</span><span class="readout-value"><span class="pill pill-wait">WAIT</span></span></div>
-          <div class="readout-tag">Example output · not live data</div>
+          <div class="readout-symbol">$BTC</div>
+          <div class="readout-row"><span class="readout-label">Structure</span><span class="readout-value">4H bullish BOS</span></div>
+          <div class="readout-row"><span class="readout-label">Zone</span><span class="readout-value">103,800–105,000</span></div>
+          <div class="readout-row"><span class="readout-label">Condition</span><span class="readout-value">Watching for rejection</span></div>
+          <div class="readout-row"><span class="readout-label">Liquidity</span><span class="readout-value">105,000</span></div>
+          <div class="readout-row"><span class="readout-label">Status</span><span class="readout-value"><span class="pill pill-wait">WATCHING</span></span></div>
+          <div class="readout-tag">Illustrative Insight · not a live feed</div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section style="position:relative;">
-  <div class="bg-numeral" style="top:-40px; right:-4%;">01</div>
-  <div class="wrap" style="position:relative; z-index:1;">
+<section style="padding-top:0;">
+  <div class="wrap">
     <div class="section-head">
-      <div class="eyebrow">The mental model</div>
-      <h2>Ask → Record → Monitor → Detect change → Alert → Retrieve → Continue</h2>
-      <p>You tell Scout what matters. It records the condition, monitors continuously, and alerts you when something changes. Afterward, you can retrieve exactly what happened — or continue a paused setup instead of starting over.</p>
+      <div class="eyebrow">Lifecycle</div>
+      <h2>An Insight has a state, like the setup behind it</h2>
+      <p>Where supported, an Insight moves through the same kind of lifecycle Scout already tracks internally — it isn't static once shared.</p>
+    </div>
+    <div class="lifecycle" style="font-size:13px; gap:8px;">
+      <span class="lifecycle-stage active">WATCHING</span><span style="color:var(--dim);">→</span>
+      <span class="lifecycle-stage">TRIGGERED</span><span style="color:var(--dim);">→</span>
+      <span class="lifecycle-stage">CONFIRMED</span><span style="color:var(--dim);">→</span>
+      <span class="lifecycle-stage">INVALIDATED</span><span style="color:var(--dim);">/</span>
+      <span class="lifecycle-stage">COMPLETED</span>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="index-group-label">How it works</div>
+    <div class="index-list" style="border-top:none;">
+      <div class="index-row"><span class="index-num">01</span><h3>Scout detects something useful</h3><p>A structural change, a triggered condition, a completed analysis — the same intelligence Scout already generates for you privately.</p></div>
+      <div class="index-row"><span class="index-num">02</span><h3>You choose to share it</h3><p>Nothing becomes public automatically. You decide which piece of intelligence is worth publishing as an Insight.</p></div>
+      <div class="index-row"><span class="index-num">03</span><h3>Scout produces a shareable Insight</h3><p>A structured, public representation of that intelligence — not a screenshot, not a paraphrase.</p></div>
+      <div class="index-row"><span class="index-num">04</span><h3>Someone else discovers it</h3><p>They see real Scout intelligence in action, and can find their way into Scout themselves.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Privacy</div>
+      <h2>Private by default. Public only by your choice.</h2>
+      <p>Scout monitoring stays private unless you explicitly share it through the Insight mechanism. Nothing below is ever exposed on its own:</p>
     </div>
     <div class="index-list">
-      <div class="index-row">
-        <span class="index-num">01</span>
-        <h3>Market Intelligence</h3>
-        <p>Structure, zones, liquidity, and a plain TRADE / WAIT / IGNORE read — built fresh from current conditions, not cached.</p>
+      <div class="index-row"><span class="index-num">—</span><h3>Never exposed automatically</h3><p>Private watchlists, private workflows, account information, risk settings, private notes, personal preferences, and private monitoring conditions all stay private unless you explicitly share a specific Insight.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Following</div>
+      <h2>Follow a trader, or a market</h2>
+      <p><code>/follow</code> a person's public activity, or <code>/followmarket</code> a symbol's. <code>/feed</code> shows your personalized feed from both; <code>/discover</code> and <code>/trending</code> help you find who and what to follow next.</p>
+    </div>
+    <table>
+      <tr><th>Command</th><th>Does</th></tr>
+      <tr><td class="mono">/follow, /unfollow</td><td>Follow or unfollow a person's public activity</td></tr>
+      <tr><td class="mono">/followmarket, /unfollowmarket</td><td>Follow or unfollow a symbol's public activity</td></tr>
+      <tr><td class="mono">/following</td><td>List everyone and every market you follow</td></tr>
+      <tr><td class="mono">/feed</td><td>Your personalized feed from your follows</td></tr>
+      <tr><td class="mono">/marketfeed</td><td>One symbol's public activity feed on its own</td></tr>
+      <tr><td class="mono">/discover</td><td>Surfaces other users to follow</td></tr>
+      <tr><td class="mono">/trending</td><td>Symbols currently seeing the most public Insight activity</td></tr>
+      <tr><td class="mono">/market &lt;symbol&gt;</td><td>What the Scout network is watching on that symbol — watcher counts, condition-type breakdown, most-watched zones</td></tr>
+    </table>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Reputation</div>
+      <h2>Self-reported. Never a leaderboard.</h2>
+      <p>Record a real win/loss/breakeven outcome on the condition an Insight came from with <code>/outcome</code>. Your own <code>/profile</code> then shows a transparent stat block: resolved count and win rate. This is explicitly self-reported and not audited by Scout — not a leaderboard, not a cross-user comparison, not comparable across different sample sizes. The methodology is always shown alongside the numbers.</p>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Available now vs. future direction</div>
+      <h2>What's live, and what's next</h2>
+    </div>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:24px;">
+      <div class="card" style="border-radius:var(--r-lg);">
+        <h3 style="color:var(--green);">Available now</h3>
+        <p>Sharing an Insight, public profiles with bio and history, following people and markets, a personalized feed, per-market feed, discovery and trending feeds, market-level social intelligence per symbol, and self-reported, unaudited reputation.</p>
       </div>
-      <div class="index-row">
-        <span class="index-num">02</span>
-        <h3>Monitoring &amp; Alerts</h3>
-        <p>Describe a condition once. Scout tracks it and messages you the moment it fires — never a generic watchlist add.</p>
-      </div>
-      <div class="index-row">
-        <span class="index-num">03</span>
-        <h3>Persistent Context</h3>
-        <p>Pause a setup and resume it later. Ask why you were alerted, weeks after the fact, and get a real answer.</p>
+      <div class="card" style="border-radius:var(--r-lg);">
+        <h3 style="color:var(--muted);">Future direction</h3>
+        <p>Likes/comments or any engagement-metric ranking — deliberately excluded by design, not just unbuilt. Cross-user leaderboards or profitability comparisons — explicitly out of scope. Topic/category following beyond people and markets — the data model supports it, but it isn't live.</p>
       </div>
     </div>
   </div>
@@ -87,46 +157,9 @@
 
 <section style="padding-top:0;">
   <div class="wrap">
-    <div class="res-mosaic">
-      <a href="/product/" class="res-card wide">
-        <span class="tag">Product</span>
-        <h3>What Scout actually does</h3>
-        <p>Real product demonstrations — Market Maps, opportunity discovery, zone intelligence.</p>
-        <span class="go">Explore Product →</span>
-      </a>
-      <a href="/capabilities/" class="res-card">
-        <span class="tag">Capabilities</span>
-        <h3>Full capability system</h3>
-        <p>Every command, organized by category.</p>
-        <span class="go">See Capabilities →</span>
-      </a>
-      <a href="/pricing/" class="res-card">
-        <span class="tag">Pricing</span>
-        <h3>Free, and Scout Pro</h3>
-        <p>Founding-member pricing available now.</p>
-        <span class="go">View Pricing →</span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<section style="padding-top:0;">
-  <div class="wrap">
-    <div class="quote-block">
-      <div class="eyebrow" style="justify-content:center;">From a Scout user</div>
-      <div class="quote-mark">"</div>
-      <p class="quote-text">I use it as an additional tool for my market analysis, and it has been really helpful. It helps me identify trending pairs, spot potential changes in market structure, and provides speculative TP and SL levels to help with trade planning. One of the features I find most useful is its ability to monitor a trade as it develops, especially when the setup hasn't fully confirmed my bias yet. I see it less as a tool for blindly following signals and more as an extra pair of eyes on the market that helps with scanning, structure analysis, trade planning, and trade monitoring — while I still make the final trading decisions myself.</p>
-      <div class="quote-attr">— Simple, Crypto Trader · 2+ Years of Trading Experience</div>
-    </div>
-  </div>
-</section>
-
-<section style="padding-top:0;">
-  <div class="wrap">
-    <div class="cta-band">
-      <h2>Scout watches. Scout finds. Scout explains.<br>The trader decides.</h2>
-      <p>Built for crypto traders who want to know what's happening in the market without staying glued to charts all day.</p>
-      <a href="https://t.me/scou0_bot" class="btn btn-primary" target="_blank" rel="noopener" style="position:relative;">Enter Scout on Telegram →</a>
+    <div class="callout">
+      <p>See the exact commands for sharing and viewing an Insight.</p>
+      <a href="/resources/guides/">Browse the How-To Guides →</a>
     </div>
   </div>
 </section>
